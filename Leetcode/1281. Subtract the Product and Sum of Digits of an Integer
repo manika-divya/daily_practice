@@ -1,0 +1,14 @@
+class Solution:
+    def subtractProductAndSum(self, n: int) -> int:
+        temp = n
+        sum_digit = 0
+        prod = 1
+
+        while temp>0:
+            r = temp %10
+            sum_digit+=r
+            prod *=r
+            temp//=10
+
+        return prod-sum_digit
+        
