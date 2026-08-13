@@ -1,0 +1,17 @@
+# Rock paper scissors game
+import random
+
+choices = ['rock','paper','scissors']
+
+user = input('your choice is: ')
+computer = random.choice(choices)
+
+print('Your choice is ',user)
+print('computer choice is ',computer)
+
+if user == computer:
+    print("Is is a tie!!")
+elif(user == 'rock' and computer=='scissors') or(user == 'paper' and computer == 'rock' ) or(user == 'scissors' and computer == 'paper'):
+    print('You Won!')
+else:
+    print('computer won!')
