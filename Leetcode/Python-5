@@ -1,0 +1,26 @@
+balance = 100
+
+while True:
+    print('\n1.check balance')
+    print('2.Deposite amount')
+    print('3.Withdraw amount')
+    print('4.exit')
+
+    choice = int(input('Enter your choice: '))
+
+    if choice == 1:
+        print('balance: ',balance)
+    elif choice == 2:
+        amount = int(input('Enter the desposite amount: '))
+        balance+=amount
+        print('Amount Deposited successfully!')
+    elif choice == 3:
+
+        withdraw_amt = int(input('Enter the withdraw amount: '))
+        if withdraw_amt <= balance:
+            balance-= withdraw_amt
+            print('Amount withdrawn successfully')
+        else:
+            print('Insufficient balance')
+    else:
+        print('Invalid choice')
