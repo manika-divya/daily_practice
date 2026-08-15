@@ -1,0 +1,14 @@
+import random
+
+secert_num = random.randint(1,100)
+
+while True:
+    user_guess = int(input('Guess the number between 1 to 100: '))
+
+    if user_guess == secert_num:
+        print('congratulations your guess is correct!!')
+        break
+    elif user_guess >secert_num:
+        print('Too high !! try again')
+    else:
+        print('Too low !! try again')
